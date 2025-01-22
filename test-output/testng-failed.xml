@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="FirstScriptMVN(failed)">
+    <classes>
+      <class name="FirstSCriptsPackage.tablesTagName">
+        <methods>
+          <include name="driverExe"/>
+          <include name="closeDriver"/>
+          <include name="checkBox"/>
+        </methods>
+      </class> <!-- FirstSCriptsPackage.tablesTagName -->
+    </classes>
+  </test> <!-- FirstScriptMVN(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->
