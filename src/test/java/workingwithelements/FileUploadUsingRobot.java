@@ -24,7 +24,8 @@ public class FileUploadUsingRobot {
 	@BeforeClass
 	public void setUp() 
 	{
-
+		System.setProperty("webdriver.chrome.driver", 
+				System.getProperty("user.dir")+"\\Sources\\chromedriver.exe");
 		driver = new ChromeDriver(); 
 		driver.navigate().to("https://the-internet.herokuapp.com/upload");
 		driver.manage().window().maximize();
@@ -33,7 +34,7 @@ public class FileUploadUsingRobot {
 	@Test
 	public void FileUploadWithRobot() throws InterruptedException, AWTException 
 	{
-		String imageName = "Image.jpg";
+		String imageName = "avatar-blank.jpg";
 		String imagePath = System.getProperty("user.dir")+"\\Uploads\\"+imageName;
 
 		WebElement fileUploader = driver.findElement(By.id("file-upload")); 

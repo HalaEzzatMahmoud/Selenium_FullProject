@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_Suite" class="navigator-link">
-              <span class="suite-name border-failed">Default Suite</span>
+              <span class="suite-name border-passed">Default Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,71 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">11 methods,   11 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_Suite" class="hide-methods failed suite-Default_Suite"> (hide)</a> <!-- hide-methods failed suite-Default_Suite -->
-                      <a href="#" panel-name="suite-Default_Suite" class="show-methods failed suite-Default_Suite"> (show)</a> <!-- show-methods failed suite-Default_Suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_Suite" class="hide-methods passed suite-Default_Suite"> (hide)</a> <!-- hide-methods passed suite-Default_Suite -->
+                      <a href="#" panel-name="suite-Default_Suite" class="show-methods passed suite-Default_Suite"> (show)</a> <!-- show-methods passed suite-Default_Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Default_Suite">
+                    <div class="method-list-content passed suite-Default_Suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_Suite" title="FirstSCriptsPackage.tablesTagName" class="method navigator-link" hash-for-method="checkBox">checkBox</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="findingelements.FindElementsByClassName" class="method navigator-link" hash-for-method="findElementsByClassName">findElementsByClassName</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Default_Suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="findingelements.FindElementByID" class="method navigator-link" hash-for-method="findElemenyByID">findElemenyByID</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="findingelements.FindElementByName" class="method navigator-link" hash-for-method="findElemenyByName">findElemenyByName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="findingelements.TestBrowserCommands" class="method navigator-link" hash-for-method="testBrowserCommands">testBrowserCommands</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="findingelements.FindByCSSSelector" class="method navigator-link" hash-for-method="testFindByCSSSelector">testFindByCSSSelector</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="findingelements.FindElementInTableByTagName" class="method navigator-link" hash-for-method="testFindByTageName">testFindByTageName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="findingelements.FindElementByTagName" class="method navigator-link" hash-for-method="testFindByTageName">testFindByTageName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="findingelements.FindByElements" class="method navigator-link" hash-for-method="testFindElements">testFindElements</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="findingelements.FindLinksByLinkText" class="method navigator-link" hash-for-method="textLinkPartialText">textLinkPartialText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="findingelements.FindLinksByLinkText" class="method navigator-link" hash-for-method="textLinkText">textLinkText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="findingelements.FindElementByXPath" class="method navigator-link" hash-for-method="xPath">xPath</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,49 +168,163 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_Suite" class="panel Default_Suite">
-          <div class="suite-Default_Suite-class-failed">
+          <div class="suite-Default_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">FirstSCriptsPackage.tablesTagName</span>
+              <img src="passed.png"/>
+              <span class="class-name">findingelements.FindByElements</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="checkBox">
-                  </a> <!-- checkBox -->
-                  <span class="method-name">checkBox</span>
-                  <div class="stack-trace">org.openqa.selenium.InvalidSelectorException: invalid selector
-from javascript error: {&quot;status&quot;:32,&quot;value&quot;:&quot;Unable to locate an element with the xpath expression //*[@id=\&quot;checkboxes\&quot;]/ because of the following error:\nSyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//*[@id=\&quot;checkboxes\&quot;]/&apos; is not a valid XPath expression.&quot;}
-  (Session info: chrome=131.0.6778.86)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
-Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cb1314f8c0318cac58408c45dd8bdfb3, findElement {value=//*[@id=&quot;checkboxes&quot;]/, using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58507}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58507/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cb1314f8c0318cac58408c45dd8bdfb3
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at FirstSCriptsPackage.tablesTagName.isElementPresent(tablesTagName.java:149)
-	at FirstSCriptsPackage.tablesTagName.checkBox(tablesTagName.java:158)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
+                  <a name="testFindElements">
+                  </a> <!-- testFindElements -->
+                  <span class="method-name">testFindElements</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_Suite-class-failed -->
+          </div> <!-- suite-Default_Suite-class-passed -->
+          <div class="suite-Default_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">findingelements.FindElementsByClassName</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="findElementsByClassName">
+                  </a> <!-- findElementsByClassName -->
+                  <span class="method-name">findElementsByClassName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_Suite-class-passed -->
+          <div class="suite-Default_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">findingelements.FindElementByXPath</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="xPath">
+                  </a> <!-- xPath -->
+                  <span class="method-name">xPath</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_Suite-class-passed -->
+          <div class="suite-Default_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">findingelements.FindElementByID</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="findElemenyByID">
+                  </a> <!-- findElemenyByID -->
+                  <span class="method-name">findElemenyByID</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_Suite-class-passed -->
+          <div class="suite-Default_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">findingelements.FindElementByTagName</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFindByTageName">
+                  </a> <!-- testFindByTageName -->
+                  <span class="method-name">testFindByTageName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_Suite-class-passed -->
+          <div class="suite-Default_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">findingelements.FindByCSSSelector</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFindByCSSSelector">
+                  </a> <!-- testFindByCSSSelector -->
+                  <span class="method-name">testFindByCSSSelector</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_Suite-class-passed -->
+          <div class="suite-Default_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">findingelements.TestBrowserCommands</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBrowserCommands">
+                  </a> <!-- testBrowserCommands -->
+                  <span class="method-name">testBrowserCommands</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_Suite-class-passed -->
+          <div class="suite-Default_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">findingelements.FindLinksByLinkText</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="textLinkPartialText">
+                  </a> <!-- textLinkPartialText -->
+                  <span class="method-name">textLinkPartialText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="textLinkText">
+                  </a> <!-- textLinkText -->
+                  <span class="method-name">textLinkText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_Suite-class-passed -->
+          <div class="suite-Default_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">findingelements.FindElementByName</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="findElemenyByName">
+                  </a> <!-- findElemenyByName -->
+                  <span class="method-name">findElemenyByName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_Suite-class-passed -->
+          <div class="suite-Default_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">findingelements.FindElementInTableByTagName</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFindByTageName">
+                  </a> <!-- testFindByTageName -->
+                  <span class="method-name">testFindByTageName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_Suite-class-passed -->
         </div> <!-- panel Default_Suite -->
         <div panel-name="test-xml-Default_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -171,11 +335,20 @@ Session ID: cb1314f8c0318cac58408c45dd8bdfb3
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Default Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;FirstScriptMVN&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Selenium_FullProject&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;FirstSCriptsPackage.tablesTagName&quot;/&gt;
+      &lt;class name=&quot;findingelements.FindByElements&quot;/&gt;
+      &lt;class name=&quot;findingelements.FindElementByID&quot;/&gt;
+      &lt;class name=&quot;findingelements.FindByCSSSelector&quot;/&gt;
+      &lt;class name=&quot;findingelements.FindElementByName&quot;/&gt;
+      &lt;class name=&quot;findingelements.FindElementByXPath&quot;/&gt;
+      &lt;class name=&quot;findingelements.FindLinksByLinkText&quot;/&gt;
+      &lt;class name=&quot;findingelements.TestBrowserCommands&quot;/&gt;
+      &lt;class name=&quot;findingelements.FindElementByTagName&quot;/&gt;
+      &lt;class name=&quot;findingelements.FindElementsByClassName&quot;/&gt;
+      &lt;class name=&quot;findingelements.FindElementInTableByTagName&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- FirstScriptMVN --&gt;
+  &lt;/test&gt; &lt;!-- Selenium_FullProject --&gt;
 &lt;/suite&gt; &lt;!-- Default Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -187,7 +360,7 @@ Session ID: cb1314f8c0318cac58408c45dd8bdfb3
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">FirstScriptMVN (1 class)</span>
+                <span class="test-name">Selenium_FullProject (10 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -213,16 +386,56 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(11);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'checkBox')
-data.setCell(0, 2, 'FirstSCriptsPackage.tablesTagName')
-data.setCell(0, 3, 19);
+data.setCell(0, 1, 'testBrowserCommands')
+data.setCell(0, 2, 'findingelements.TestBrowserCommands')
+data.setCell(0, 3, 687);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testFindByTageName')
+data.setCell(1, 2, 'findingelements.FindElementByTagName')
+data.setCell(1, 3, 504);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testFindByCSSSelector')
+data.setCell(2, 2, 'findingelements.FindByCSSSelector')
+data.setCell(2, 3, 63);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'xPath')
+data.setCell(3, 2, 'findingelements.FindElementByXPath')
+data.setCell(3, 3, 50);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testFindByTageName')
+data.setCell(4, 2, 'findingelements.FindElementInTableByTagName')
+data.setCell(4, 3, 33);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testFindElements')
+data.setCell(5, 2, 'findingelements.FindByElements')
+data.setCell(5, 3, 33);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'findElemenyByID')
+data.setCell(6, 2, 'findingelements.FindElementByID')
+data.setCell(6, 3, 31);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'findElementsByClassName')
+data.setCell(7, 2, 'findingelements.FindElementsByClassName')
+data.setCell(7, 3, 24);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'textLinkPartialText')
+data.setCell(8, 2, 'findingelements.FindLinksByLinkText')
+data.setCell(8, 3, 22);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'textLinkText')
+data.setCell(9, 2, 'findingelements.FindLinksByLinkText')
+data.setCell(9, 3, 17);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'findElemenyByName')
+data.setCell(10, 2, 'findingelements.FindElementByName')
+data.setCell(10, 3, 16);
 window.suiteTableData['Default_Suite']= { tableData: data, tableDiv: 'times-div-Default_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 19 ms</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-Default_Suite">
               </div> <!-- times-div-Default_Suite -->
             </div> <!-- times-div -->
@@ -237,32 +450,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">9 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">FirstSCriptsPackage.tablesTagName</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">submit</span>
-                <br/>
-                <span class="ignored-method-name">FindElements</span>
-                <br/>
-                <span class="ignored-method-name">workingWithText</span>
-                <br/>
-                <span class="ignored-method-name">xPath</span>
-                <br/>
-                <span class="ignored-method-name">LinkText</span>
-                <br/>
-                <span class="ignored-method-name">DropDown</span>
-                <br/>
-                <span class="ignored-method-name">findElementsByTagName</span>
-                <br/>
-                <span class="ignored-method-name">webTables</span>
-                <br/>
-                <span class="ignored-method-name">cssSelector</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_Suite" class="panel">
@@ -271,20 +461,217 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">FirstSCriptsPackage.tablesTagName</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">findingelements.FindByCSSSelector</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">driverExe</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">findingelements.FindByElements</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">driverExe</span>
+                <span class="method-start">4989 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">findingelements.FindElementByID</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">driverExe</span>
+                <span class="method-start">8504 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">findingelements.FindElementByName</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">driverExe</span>
+                <span class="method-start">11632 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">findingelements.FindElementByTagName</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">driverExe</span>
+                <span class="method-start">16368 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">findingelements.FindElementByXPath</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">driverExe</span>
+                <span class="method-start">21328 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">findingelements.FindElementInTableByTagName</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">driverExe</span>
+                <span class="method-start">29622 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">findingelements.FindElementsByClassName</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">driverExe</span>
+                <span class="method-start">41839 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">findingelements.FindLinksByLinkText</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">driverExe</span>
+                <span class="method-start">48847 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">findingelements.TestBrowserCommands</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">driverExe</span>
+                <span class="method-start">67130 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">findingelements.FindByElements</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">checkBox</span>
-                <span class="method-start">4851 ms</span>
+                <span class="method-name">testFindElements</span>
+                <span class="method-start">73847 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">findingelements.FindElementByID</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">findElemenyByID</span>
+                <span class="method-start">73882 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">findingelements.FindByCSSSelector</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testFindByCSSSelector</span>
+                <span class="method-start">73914 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">findingelements.FindElementByName</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">findElemenyByName</span>
+                <span class="method-start">73978 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">findingelements.FindElementByXPath</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">xPath</span>
+                <span class="method-start">73995 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">findingelements.FindLinksByLinkText</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">textLinkPartialText</span>
+                <span class="method-start">74046 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">textLinkText</span>
+                <span class="method-start">74069 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">findingelements.TestBrowserCommands</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testBrowserCommands</span>
+                <span class="method-start">74086 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">findingelements.FindElementByTagName</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testFindByTageName</span>
+                <span class="method-start">74774 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">findingelements.FindElementsByClassName</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">findElementsByClassName</span>
+                <span class="method-start">75278 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">findingelements.FindElementInTableByTagName</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testFindByTageName</span>
+                <span class="method-start">75303 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">findingelements.FindByCSSSelector</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">4880 ms</span>
+                <span class="method-start">75337 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">findingelements.FindByElements</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">75485 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">findingelements.FindElementByID</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">75606 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">findingelements.FindElementByName</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">77273 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">findingelements.FindElementByTagName</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">77421 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">findingelements.FindElementByXPath</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">77558 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">findingelements.FindElementInTableByTagName</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">77697 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">findingelements.FindElementsByClassName</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">77838 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">findingelements.FindLinksByLinkText</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">77977 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">findingelements.TestBrowserCommands</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">78114 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

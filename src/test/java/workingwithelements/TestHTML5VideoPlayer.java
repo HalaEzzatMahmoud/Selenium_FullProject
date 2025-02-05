@@ -21,7 +21,8 @@ public class TestHTML5VideoPlayer
 
 	@BeforeClass
 	public void setUp() {
-
+		System.setProperty("webdriver.gecko.driver", 
+				System.getProperty("user.dir")+"\\Sources\\geckodriver.exe");
 		driver = new FirefoxDriver();
 		driver.get("http://cookbook.seleniumacademy.com/html5video.html");
 	}

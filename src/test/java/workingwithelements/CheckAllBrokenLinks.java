@@ -49,6 +49,7 @@ public class CheckAllBrokenLinks
 	public void VerifyLink(WebElement link)
 	{
 		try {
+
 			String url = link.getAttribute("href");
 			URL urllink = new URL(url);
 			// create a connection using URL object

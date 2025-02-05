@@ -1,93 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-03T22:03:58 EET" name="Default Suite" finished-at="2024-12-03T22:04:03 EET" duration-ms="5158">
+  <suite started-at="2025-01-28T23:46:17 EET" name="Default Suite" finished-at="2025-01-28T23:47:35 EET" duration-ms="78261">
     <groups>
     </groups>
-    <test started-at="2024-12-03T22:03:58 EET" name="FirstScriptMVN" finished-at="2024-12-03T22:04:03 EET" duration-ms="5158">
-      <class name="FirstSCriptsPackage.tablesTagName">
-        <test-method is-config="true" signature="driverExe()[pri:0, instance:FirstSCriptsPackage.tablesTagName@223f3642]" started-at="2024-12-03T22:03:58 EET" name="driverExe" finished-at="2024-12-03T22:04:03 EET" duration-ms="4838" status="PASS">
+    <test started-at="2025-01-28T23:46:17 EET" name="Selenium_FullProject" finished-at="2025-01-28T23:47:35 EET" duration-ms="78261">
+      <class name="findingelements.TestBrowserCommands">
+        <test-method is-config="true" signature="driverExe()[pri:0, instance:findingelements.TestBrowserCommands@77167fb7]" started-at="2025-01-28T23:47:24 EET" name="driverExe" finished-at="2025-01-28T23:47:31 EET" duration-ms="6701" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverExe -->
-        <test-method signature="checkBox()[pri:0, instance:FirstSCriptsPackage.tablesTagName@223f3642]" started-at="2024-12-03T22:04:03 EET" name="checkBox" finished-at="2024-12-03T22:04:03 EET" duration-ms="19" status="FAIL">
-          <exception class="org.openqa.selenium.InvalidSelectorException">
-            <message>
-              <![CDATA[invalid selector
-from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression //*[@id=\"checkboxes\"]/ because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '//*[@id=\"checkboxes\"]/' is not a valid XPath expression."}
-  (Session info: chrome=131.0.6778.86)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
-Build info: version: '4.26.0', revision: '8ccf0219d7'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cb1314f8c0318cac58408c45dd8bdfb3, findElement {value=//*[@id="checkboxes"]/, using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58507}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58507/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cb1314f8c0318cac58408c45dd8bdfb3]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector
-from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression //*[@id=\"checkboxes\"]/ because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '//*[@id=\"checkboxes\"]/' is not a valid XPath expression."}
-  (Session info: chrome=131.0.6778.86)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
-Build info: version: '4.26.0', revision: '8ccf0219d7'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cb1314f8c0318cac58408c45dd8bdfb3, findElement {value=//*[@id="checkboxes"]/, using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58507}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58507/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cb1314f8c0318cac58408c45dd8bdfb3
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at FirstSCriptsPackage.tablesTagName.isElementPresent(tablesTagName.java:149)
-at FirstSCriptsPackage.tablesTagName.checkBox(tablesTagName.java:158)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+        <test-method signature="testBrowserCommands()[pri:0, instance:findingelements.TestBrowserCommands@77167fb7]" started-at="2025-01-28T23:47:31 EET" name="testBrowserCommands" finished-at="2025-01-28T23:47:32 EET" duration-ms="687" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkBox -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:FirstSCriptsPackage.tablesTagName@223f3642]" started-at="2024-12-03T22:04:03 EET" name="closeDriver" finished-at="2024-12-03T22:04:03 EET" duration-ms="274" status="PASS">
+        </test-method> <!-- testBrowserCommands -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:findingelements.TestBrowserCommands@77167fb7]" started-at="2025-01-28T23:47:35 EET" name="closeDriver" finished-at="2025-01-28T23:47:35 EET" duration-ms="142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-      </class> <!-- FirstSCriptsPackage.tablesTagName -->
-    </test> <!-- FirstScriptMVN -->
+      </class> <!-- findingelements.TestBrowserCommands -->
+      <class name="findingelements.FindLinksByLinkText">
+        <test-method is-config="true" signature="driverExe()[pri:0, instance:findingelements.FindLinksByLinkText@15b204a1]" started-at="2025-01-28T23:47:06 EET" name="driverExe" finished-at="2025-01-28T23:47:24 EET" duration-ms="18283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverExe -->
+        <test-method signature="textLinkPartialText()[pri:0, instance:findingelements.FindLinksByLinkText@15b204a1]" started-at="2025-01-28T23:47:31 EET" name="textLinkPartialText" finished-at="2025-01-28T23:47:31 EET" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- textLinkPartialText -->
+        <test-method signature="textLinkText()[pri:1, instance:findingelements.FindLinksByLinkText@15b204a1]" started-at="2025-01-28T23:47:31 EET" name="textLinkText" finished-at="2025-01-28T23:47:31 EET" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- textLinkText -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:findingelements.FindLinksByLinkText@15b204a1]" started-at="2025-01-28T23:47:35 EET" name="closeDriver" finished-at="2025-01-28T23:47:35 EET" duration-ms="137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- findingelements.FindLinksByLinkText -->
+      <class name="findingelements.FindByCSSSelector">
+        <test-method is-config="true" signature="driverExe()[pri:0, instance:findingelements.FindByCSSSelector@147ed70f]" started-at="2025-01-28T23:46:17 EET" name="driverExe" finished-at="2025-01-28T23:46:22 EET" duration-ms="4989" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverExe -->
+        <test-method signature="testFindByCSSSelector()[pri:0, instance:findingelements.FindByCSSSelector@147ed70f]" started-at="2025-01-28T23:47:31 EET" name="testFindByCSSSelector" finished-at="2025-01-28T23:47:31 EET" duration-ms="63" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFindByCSSSelector -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:findingelements.FindByCSSSelector@147ed70f]" started-at="2025-01-28T23:47:33 EET" name="closeDriver" finished-at="2025-01-28T23:47:33 EET" duration-ms="148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- findingelements.FindByCSSSelector -->
+      <class name="findingelements.FindByElements">
+        <test-method is-config="true" signature="driverExe()[pri:0, instance:findingelements.FindByElements@45018215]" started-at="2025-01-28T23:46:22 EET" name="driverExe" finished-at="2025-01-28T23:46:26 EET" duration-ms="3515" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverExe -->
+        <test-method signature="testFindElements()[pri:0, instance:findingelements.FindByElements@45018215]" started-at="2025-01-28T23:47:31 EET" name="testFindElements" finished-at="2025-01-28T23:47:31 EET" duration-ms="33" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFindElements -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:findingelements.FindByElements@45018215]" started-at="2025-01-28T23:47:33 EET" name="closeDriver" finished-at="2025-01-28T23:47:33 EET" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- findingelements.FindByElements -->
+      <class name="findingelements.FindElementByID">
+        <test-method is-config="true" signature="driverExe()[pri:0, instance:findingelements.FindElementByID@4278a03f]" started-at="2025-01-28T23:46:26 EET" name="driverExe" finished-at="2025-01-28T23:46:29 EET" duration-ms="3128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverExe -->
+        <test-method signature="findElemenyByID()[pri:0, instance:findingelements.FindElementByID@4278a03f]" started-at="2025-01-28T23:47:31 EET" name="findElemenyByID" finished-at="2025-01-28T23:47:31 EET" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findElemenyByID -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:findingelements.FindElementByID@4278a03f]" started-at="2025-01-28T23:47:33 EET" name="closeDriver" finished-at="2025-01-28T23:47:34 EET" duration-ms="1666" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- findingelements.FindElementByID -->
+      <class name="findingelements.FindElementByName">
+        <test-method is-config="true" signature="driverExe()[pri:0, instance:findingelements.FindElementByName@61dd025]" started-at="2025-01-28T23:46:29 EET" name="driverExe" finished-at="2025-01-28T23:46:34 EET" duration-ms="4736" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverExe -->
+        <test-method signature="findElemenyByName()[pri:0, instance:findingelements.FindElementByName@61dd025]" started-at="2025-01-28T23:47:31 EET" name="findElemenyByName" finished-at="2025-01-28T23:47:31 EET" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findElemenyByName -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:findingelements.FindElementByName@61dd025]" started-at="2025-01-28T23:47:34 EET" name="closeDriver" finished-at="2025-01-28T23:47:35 EET" duration-ms="148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- findingelements.FindElementByName -->
+      <class name="findingelements.FindElementByXPath">
+        <test-method is-config="true" signature="driverExe()[pri:0, instance:findingelements.FindElementByXPath@124c278f]" started-at="2025-01-28T23:46:39 EET" name="driverExe" finished-at="2025-01-28T23:46:47 EET" duration-ms="8294" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverExe -->
+        <test-method signature="xPath()[pri:0, instance:findingelements.FindElementByXPath@124c278f]" started-at="2025-01-28T23:47:31 EET" name="xPath" finished-at="2025-01-28T23:47:31 EET" duration-ms="50" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- xPath -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:findingelements.FindElementByXPath@124c278f]" started-at="2025-01-28T23:47:35 EET" name="closeDriver" finished-at="2025-01-28T23:47:35 EET" duration-ms="139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- findingelements.FindElementByXPath -->
+      <class name="findingelements.FindElementsByClassName">
+        <test-method is-config="true" signature="driverExe()[pri:0, instance:findingelements.FindElementsByClassName@6ce139a4]" started-at="2025-01-28T23:46:59 EET" name="driverExe" finished-at="2025-01-28T23:47:06 EET" duration-ms="7008" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverExe -->
+        <test-method signature="findElementsByClassName()[pri:3, instance:findingelements.FindElementsByClassName@6ce139a4]" started-at="2025-01-28T23:47:32 EET" name="findElementsByClassName" finished-at="2025-01-28T23:47:33 EET" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findElementsByClassName -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:findingelements.FindElementsByClassName@6ce139a4]" started-at="2025-01-28T23:47:35 EET" name="closeDriver" finished-at="2025-01-28T23:47:35 EET" duration-ms="139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- findingelements.FindElementsByClassName -->
+      <class name="findingelements.FindElementInTableByTagName">
+        <test-method is-config="true" signature="driverExe()[pri:0, instance:findingelements.FindElementInTableByTagName@6973bf95]" started-at="2025-01-28T23:46:47 EET" name="driverExe" finished-at="2025-01-28T23:46:59 EET" duration-ms="12217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverExe -->
+        <test-method signature="testFindByTageName()[pri:0, instance:findingelements.FindElementInTableByTagName@6973bf95]" started-at="2025-01-28T23:47:33 EET" name="testFindByTageName" finished-at="2025-01-28T23:47:33 EET" duration-ms="33" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFindByTageName -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:findingelements.FindElementInTableByTagName@6973bf95]" started-at="2025-01-28T23:47:35 EET" name="closeDriver" finished-at="2025-01-28T23:47:35 EET" duration-ms="140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- findingelements.FindElementInTableByTagName -->
+      <class name="findingelements.FindElementByTagName">
+        <test-method is-config="true" signature="driverExe()[pri:0, instance:findingelements.FindElementByTagName@1fe20588]" started-at="2025-01-28T23:46:34 EET" name="driverExe" finished-at="2025-01-28T23:46:39 EET" duration-ms="4960" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverExe -->
+        <test-method signature="testFindByTageName()[pri:0, instance:findingelements.FindElementByTagName@1fe20588]" started-at="2025-01-28T23:47:32 EET" name="testFindByTageName" finished-at="2025-01-28T23:47:32 EET" duration-ms="504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFindByTageName -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:findingelements.FindElementByTagName@1fe20588]" started-at="2025-01-28T23:47:35 EET" name="closeDriver" finished-at="2025-01-28T23:47:35 EET" duration-ms="136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- findingelements.FindElementByTagName -->
+    </test> <!-- Selenium_FullProject -->
   </suite> <!-- Default Suite -->
 </testng-results>
